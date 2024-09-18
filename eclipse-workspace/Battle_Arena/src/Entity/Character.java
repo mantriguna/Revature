@@ -8,7 +8,7 @@ public class Character {
 	public Character(String name, double defense,Weapon weapon) {
 		super();
 		this.name = name;
-		this.health = 1000;
+		this.health = 100;
 		this.defense = defense;
 		this.weapon=weapon;
 	}

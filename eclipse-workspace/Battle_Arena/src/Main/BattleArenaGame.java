@@ -42,7 +42,7 @@ public class BattleArenaGame {
         System.out.print("Enter Who attacks Firsts ("+playerNames[0]+" as 1 or"+playerNames[1]+" as 2):");
         int choice=sc.nextInt();
         Rules rule=new Rules();
-        System.out.println("-------FIGHT----");
+        System.out.println("-------FIGHT-------");
         switch(choice) {
         case 1:
         	while(players.get(0).getCharacter().getHealth()>0 && players.get(1).getCharacter().getHealth()>0) {
@@ -51,7 +51,7 @@ public class BattleArenaGame {
                 rule.attack(players.get(0),players.get(1));
                 System.out.println(players.get(0).getName()+" Health remaining : "+players.get(0).getCharacter().getHealth());
                 System.out.println(players.get(1).getName()+" Health remaining : "+players.get(1).getCharacter().getHealth());
-                System.out.println("---------------------------------------");
+                System.out.println("------------------------------------------------------------");
                 if(players.get(0).getCharacter().getHealth()>0 && players.get(1).getCharacter().getHealth()>0) {
                 	System.out.println(players.get(1).getName()+" have attacked to "+players.get(0).getName()+" attacked by "+players.get(1).getCharacter().getName()+" with "+players.get(1).getCharacter().getWeapon().getWeaponname());
                     rule.attack(players.get(1),players.get(0));
