@@ -3,12 +3,10 @@ package Entity;
 public class Player {
 	private String name;
 	private Character character;
-	private Weapon weapon;
-	public Player(String name,Character character, Weapon weapon) {
+	public Player(String name,Character character) {
 		super();
 		this.name=name;
 		this.character = character;
-		this.weapon = weapon;
 	}
 	public Character getCharacter() {
 		return character;
@@ -16,12 +14,7 @@ public class Player {
 	public void setCharacter(Character character) {
 		this.character = character;
 	}
-	public Weapon getWeapon() {
-		return weapon;
-	}
-	public void setWeapon(Weapon weapon) {
-		this.weapon = weapon;
-	}
+
 	public String getName() {
 		return name;
 	}
